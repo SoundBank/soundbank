@@ -6,6 +6,7 @@ gem 'rails', '4.1.5'
 
 group :development do
 gem 'sqlite3'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 end
 
 gem 'sass-rails', '~> 4.0.3'
@@ -20,7 +21,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 end
 
 group :production do
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'pg'
 gem 'rails_12factor'
 end
