@@ -8,16 +8,65 @@ Bundler.require(*Rails.groups)
 
 module SoundBank01
   class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    config.assets.precompile += ['glyphicons-halflings-regular.eot']
+	config.assets.precompile += ['glyphicons-halflings-regular.svg']
+	config.assets.precompile += ['glyphicons-halflings-regular.ttf']
+	config.assets.precompile += ['glyphicons-halflings-regular.woff']
+	config.assets.precompile += ['ajaxload.gif']
+	config.assets.precompile += ['down.gif']
+	config.assets.precompile += ['left.gif']
+	config.assets.precompile += ['logo.png']
+	config.assets.precompile += ['right.gif']
+	config.assets.precompile += ['slider1.jpg']
+	config.assets.precompile += ['slider2.jpg']
+	config.assets.precompile += ['slider3.jpg']
+	config.assets.precompile += ['slider4.jpg']
+	config.assets.precompile += ['slider5.jpg']
+	config.assets.precompile += ['top-icon.png']
+	config.assets.precompile += ['up.gif']
+	config.assets.precompile += ['bgcarousel.js']
+	config.assets.precompile += ['bootstrap.js']
+	config.assets.precompile += ['bootstrap.min.js']
+	config.assets.precompile += ['bootswatch.js']
+	config.assets.precompile += ['jquery.touchSwipe.min.js']
+	config.assets.precompile += ['jquery.velocity.min.js']
+		config.assets.precompile += ['jquery-1.10.2.min.js']
+	config.assets.precompile += ['bootstrap.css']
+	config.assets.precompile += ['bootstrap.min.css']
+	config.assets.precompile += ['bootswatch.min.css']
+	config.assets.precompile += ['style.css']
+  end
+end
 
-    # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
-    # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
 
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+module SoundBank02
+  class Application < Rails::Application
+    config.assets.precompile += ['glyphicons-halflings-regular.eot']
+	config.assets.precompile += ['glyphicons-halflings-regular.svg']
+	config.assets.precompile += ['glyphicons-halflings-regular.ttf']
+	config.assets.precompile += ['glyphicons-halflings-regular.woff']
+	config.assets.precompile += ['ajaxload.gif']
+	config.assets.precompile += ['down.gif']
+	config.assets.precompile += ['left.gif']
+	config.assets.precompile += ['logo.png']
+	config.assets.precompile += ['right.gif']
+	config.assets.precompile += ['slider1.jpg']
+	config.assets.precompile += ['slider2.jpg']
+	config.assets.precompile += ['slider3.jpg']
+	config.assets.precompile += ['slider4.jpg']
+	config.assets.precompile += ['slider5.jpg']
+	config.assets.precompile += ['top-icon.png']
+	config.assets.precompile += ['up.gif']
+	config.assets.precompile += ['bgcarousel.js']
+	config.assets.precompile += ['bootstrap.js']
+	config.assets.precompile += ['bootstrap.min.js']
+	config.assets.precompile += ['bootswatch.js']
+	config.assets.precompile += ['jquery.touchSwipe.min.js']
+	config.assets.precompile += ['jquery.velocity.min.js']
+		config.assets.precompile += ['jquery-1.10.2.min.js']
+	config.assets.precompile += ['bootstrap.css']
+	config.assets.precompile += ['bootstrap.min.css']
+	config.assets.precompile += ['bootswatch.min.css']
+	config.assets.precompile += ['style.css']
   end
 end
