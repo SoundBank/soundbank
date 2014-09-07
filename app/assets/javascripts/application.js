@@ -15,3 +15,5 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery-1.10.2.min.js
+//= require jquery.velocity.min.js
+//= require jquery.touchSwipe.min.js
