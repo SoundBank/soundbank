@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require bootstrap.min
+//= require bootstrap-popover
 //= require jquery
 //= require jquery.touchSwipe.min
 //= require jquery.velocity.min
 //= require turbolinks
-//= require bootstrap.min
-//= require bootstrap-popover
