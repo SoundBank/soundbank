@@ -10,13 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap
-//= require jquery-1.10.2.min
-//= require jquery_ujs
+//= require jquery
 //= require jquery.touchSwipe.min
 //= require jquery.velocity.min
-//= require turbolinks
+//= require bootstrap
 //= require bootstrap.min
-//= require bgcarousel
-//= require bootswatch
-//= require_self
+//= require turbolinks
