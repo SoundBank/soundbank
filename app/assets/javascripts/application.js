@@ -10,9 +10,8 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
 //= require jquery-1.10.2.min.js
+//= require jquery_ujs
 //= require jquery.velocity.min.js
 //= require jquery.touchSwipe.min.js
 //= require turbolinks
