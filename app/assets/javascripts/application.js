@@ -16,4 +16,7 @@
 //= require jquery.touchSwipe.min
 //= require jquery.velocity.min
 //= require turbolinks
-//= require_tree .
+//= require bootstrap.min
+//= require bgcarousel
+//= require bootswatch
+//= require_self
