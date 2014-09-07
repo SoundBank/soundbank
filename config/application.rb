@@ -30,6 +30,7 @@ module SoundBank01
 	config.assets.precompile += ['bootswatch.js']
 	config.assets.precompile += ['jquery.touchSwipe.min.js']
 	config.assets.precompile += ['jquery.velocity.min.js']
+		config.assets.precompile += ['jquery-1.10.2.min.js']
 	config.assets.precompile += ['bootstrap.css']
 	config.assets.precompile += ['bootstrap.min.css']
 	config.assets.precompile += ['bootswatch.min.css']
