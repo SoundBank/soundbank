@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-  
     <meta charset="utf-8">
-		<title>SoundBank n.i. - Distributed Audio Portfolio Collective</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>SoundBank n.i. - Distributed Audio Portfolio Collective</title>
 		
-		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-		<%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>    
     <link rel="stylesheet" href="/assets/bootstrap.css" media="screen">
-
-
 	
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			  <!--[if lt IE 9]>
+			    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+			    <script src="../bower_components/respond/dest/respond.min.js"></script>
+			  <![endif]-->
 	
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-      <script src="../bower_components/respond/dest/respond.min.js"></script>
-    <![endif]-->
-    <script>
-
+<script>
      var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-23019901-1']);
       _gaq.push(['_setDomainName', "bootswatch.com"]);
@@ -33,14 +28,10 @@
        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
      })();
-
-    </script>
+</script>
 	
-
   </head>
-  <body  style="background:#5f6163">
-  
-  
+  <body  style="background:#5f6163"> 
 <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -65,29 +56,24 @@
       </div>
 </div>
 
-
-    <div class="container" style="background-color: #c3d2de; margin-top: 57px;">
+    <div class="container" style="background-color: #c3d2de; margin-top: 56px;">
       <div id="banner">
         <div class="row">	  
 		  <%= yield %>		   
         </div>
       </div>
 
- 
-
-
-
-          <div class="col-lg-12" style="margin: 25px auto; height: 50%; width: 100%; background-color: #dd4814; padding: 10px; font-family: 'Trebuchet MS', Georgia; -moz-border-radius: 15px; border-radius: 15px;">
-<br>
-            <ul class="list-unstyled">
-              <li class="pull-right"><a href="#top" style="color:white;"><img src="../assets/top-icon.png"></a></li>
-            <p style="color:white; font-size: 16px; font-family: 'Trebuchet MS', Georgia; font-style: italic;">Copyright 2015 SoundBank</p>
+      <div class="col-lg-12" style="margin: 25px auto; height: 50%; width: 100%; background-color: #dd4814; padding: 10px; font-family: 'Trebuchet MS', Georgia; -moz-border-radius: 15px; border-radius: 15px;">
+        <br>
+          <ul class="list-unstyled">
+            <li class="pull-right">
+			  <a href="#top" style="color:white;">
+			    <img src="../assets/top-icon.png">
+			  </a>
+			</li>
+          <p style="color:white; font-size: 16px; font-family: 'Trebuchet MS', Georgia; font-style: italic;">Copyright 2015 SoundBank</p>
         </div>
-
-    </div>
-<br>
-
-
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  
+      </div>
   </body>
 </html>
