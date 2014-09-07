@@ -929,6 +929,11 @@ background: url(/assets/icon1.png) no-repeat 100% -0% #303030;
 		width: 43%;
 	}
 }
+
+.dropdown-backdrop {
+  position: static;
+}
+
 @media only screen and (max-width: 768px) and (min-width: 640px) {
 	.wrap{
 		width:90%;
