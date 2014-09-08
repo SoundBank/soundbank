@@ -1,0 +1,34 @@
+<%= form_for(@support) do |f| %>
+  <% if @support.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@support.errors.count, "error") %> prohibited this support from being saved:</h2>
+
+      <ul>
+      <% @support.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, :style =>'-moz-border-radius: 15px; border-radius: 5px; background: BlanchedAlmond;' %>
+      <img src="/assets/20px-icon-spacer.png" style="width: 45px;">
+    <%= f.label :email %>
+    <%= f.text_field :email, :style =>'-moz-border-radius: 15px; border-radius: 5px; background: BlanchedAlmond;' %>
+  </div>
+  <hr>
+
+  <div class="field">
+    <%= f.label :content %><br><br>
+<center>
+    <%= f.text_area :content, :style =>'-moz-border-radius: 15px; border-radius: 10px; width: 97%; height: 200px; background: BlanchedAlmond;' %>
+  </div>
+
+  <hr>
+  <div class="actions">
+    <%= f.submit "Post Your Message", :class =>'btn btn-primary' %>
+  </div>
+</center>
+  <% end %>

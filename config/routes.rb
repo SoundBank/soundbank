@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :supports
+
   get 'pages/home'
   get 'pages/login'
   get 'pages/about'

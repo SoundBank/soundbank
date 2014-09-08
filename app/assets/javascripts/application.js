@@ -10,7 +10,10 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// Added jq-ujs below again - peet
+//
 //= require jquery
+//= require jquery_ujs
 //= require jquery.touchSwipe.min
 //= require jquery.velocity.min
 //= require turbolinks

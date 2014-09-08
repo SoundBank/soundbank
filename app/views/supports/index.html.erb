@@ -1,0 +1,50 @@
+<center>
+    <br>
+    <p style="color: #dd4814; font-style: bold; font-family: Cambria, Georgia; font-size: 36px; font-weight: bold;">Received Messages</p>
+     <hr>
+	 
+	 
+<div style="width: 98%; margin: 0 auto; background: #FFFFFF; width: 97%; padding: 10px; color: #dd4814; font-size: 16px; font-weight: bold; font-family: 'Trebuchet MS', Georgia; -moz-border-radius: 15px; border-radius: 15px;">
+
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr style="background: #dd4814; color: white; font-size: 16px; font-family: 'Trebuchet MS', Georgia;">
+	    <th width="1%">ID</th>
+        <th width="10%">Name</th>
+        <th width="88%">Comment</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @supports.each do |support| %>
+        <tr>
+		  <td style="color: black;">
+		    <%= support.id %>
+		  </td>
+          <td style="width: 15%; color: black; font-size: 16px; font-style: italic; text-align: right;">
+		    <%= support.name %>
+			  <img style="float: right;" alt="" src="/assets/table-right.png">
+			    <br>
+			  <hr>
+			   <%= link_to( image_tag('table-delete.png'), support, method: :delete, :style => 'background:inherit;float:left;', data: { confirm: 'DELETE ITEM?' } ) %>
+			     <img style="float: left;" alt="" src="/assets/20px-icon-spacer.png">			  
+			   <%= link_to( image_tag('table-read.png'), support, :style => 'background:inherit;float:right;' ) %>
+			     <img style="float: right;" alt="" src="/assets/20px-icon-spacer.png">
+		  </td>
+
+          <td style="color: black; font-size: 12px;">
+		    <%= support.content %>
+		  </td>
+		</tr>
+		
+
+      <% end %>
+    </tbody>
+  </table>
+  
+  <br>
+    <img src="/assets/table-new.png">
+      <%= link_to 'Create New Support', new_support_path, :style => 'background:inherit;color:grey;text-decoration: none;' %>
+	<img src="/assets/table-new.png">
+
+</div>
