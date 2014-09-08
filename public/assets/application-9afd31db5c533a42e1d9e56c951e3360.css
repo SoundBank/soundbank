@@ -6243,14 +6243,16 @@ div.field, div.actions {
 
 /* line 48, F:/rails/soundbank02/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation {
-  width: 450px;
+  width: 100%;
   border: 2px solid red;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 55, F:/rails/soundbank02/app/assets/stylesheets/scaffolds.css.scss */
+/* line 57, F:/rails/soundbank02/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -6261,10 +6263,9 @@ div.field, div.actions {
   background-color: #c00;
   color: #fff;
 }
-/* line 65, F:/rails/soundbank02/app/assets/stylesheets/scaffolds.css.scss */
+/* line 67, F:/rails/soundbank02/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation ul li {
   font-size: 12px;
-  list-style: square;
 }
 /* reset */
 
