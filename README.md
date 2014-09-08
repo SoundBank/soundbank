@@ -28,7 +28,7 @@ Overall the application will have a strong Social Media feel, and be an enjoyabl
 Shell Commands
 --------------
 ```sh
-$ rev README.rdoc
+$ rev README.md
 
 $ %blow
 ```
@@ -43,6 +43,6 @@ Creative Commons
 
 
 [Ruby on Rails]:http://rubyonrails.org/
-[here]:http://lmgtfy.com/?q=where+is+my+ass%3F
+[here]:http://lmgtfy.com/?q=What+is+the+difference+between+my+arse+and+my+elbow?%3F
 [Twitter Bootstrap]:http://twitter.github.com/bootstrap/
 
