@@ -1,15 +1,26 @@
+        <script type="text/javascript">
+        var prg_width = 290;
+ 
+        function progress() {
+            var node = document.getElementById('progress');
+            var w    = node.style.width.match(/\d+/);
+ 
+            if (w == prg_width) {
+                w = 0;
+            }
+ 
+            node.style.width = parseInt(w) + 5 + 'px';
+        }
+ 
+        </script>
+
+
+
 <center>
     <br>
     <p style="color: #dd4814; font-style: bold; font-family: Cambria, Georgia; font-size: 36px; font-weight: bold;">Success!</p>
      <hr>
-
-
-<div style="background: #FFFFFF; width: 97%; padding: 10px; color: #dd4814; font-size: 16px; font-weight: bold; font-family: 'Trebuchet MS', Georgia; -moz-border-radius: 15px; border-radius: 15px;">
-
-
-
-
-
+       <div style="background: #FFFFFF; width: 97%; height: 200px; padding: 10px; color: #dd4814; font-size: 16px; font-weight: bold; font-family: 'Trebuchet MS', Georgia; -moz-border-radius: 15px; border-radius: 15px;">
 
 <script type="text/javascript">
 var count = 6;
@@ -29,12 +40,17 @@ function countDown(){
  
 Your message has been sent successfully!
 <br><br>
+    <body onload="var progress_run_id = setInterval(progress, 109);">
  
+        <div style="border: 2px solid black; width:290px; height:20px; -moz-border-radius: 7px; border-radius: 7px;">
+        <div id="progress" style="height:16px; width:0px; background-color:green; -moz-border-radius: 7px; border-radius: 7px;"/>
+        </div>
+		</div>
 <span id="timer">
 <script type="text/javascript">countDown();</script>
 </span>
 
-  
+  <br><br>
   
   
   
