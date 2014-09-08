@@ -33,7 +33,7 @@ class SupportsController < ApplicationController
         format.json { render :show, status: :created, location: @support }
       else
         format.html { render :new }
-        format.json { render json: @support.errors, status: :unprocessable_entity }
+        format.json { render :new }
       end
     end
   end
@@ -46,8 +46,7 @@ class SupportsController < ApplicationController
         format.html { redirect_to @support, notice: 'Support was successfully updated.' }
         format.json { render :show, status: :ok, location: @support }
       else
-        format.html { render :edit }
-        format.json { render json: @support.errors, status: :unprocessable_entity }
+        render 'new'
       end
     end
   end
