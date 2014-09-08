@@ -15,6 +15,7 @@ class SupportsController < ApplicationController
   # GET /supports/new
   def new
     @support = Support.new
+
   end
 
   # GET /supports/1/edit
@@ -28,7 +29,7 @@ class SupportsController < ApplicationController
 
     respond_to do |format|
       if @support.save
-        format.html { redirect_to @support, notice: 'Support was successfully created.' }
+        format.html { redirect_to "/pages/thanks", notice: 'Message was successfully sent.' }
         format.json { render :show, status: :created, location: @support }
       else
         format.html { render :new }

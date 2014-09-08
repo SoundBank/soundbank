@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'pages/login'
   get 'pages/about'
   get 'pages/faq'
-  get 'pages/contact'
+  get 'pages/contact', :to => redirect('/supports/new')
+  get 'pages/thanks'
 
 root 'pages#home'
 

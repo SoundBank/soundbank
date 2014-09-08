@@ -1,0 +1,47 @@
+<center>
+    <br>
+    <p style="color: #dd4814; font-style: bold; font-family: Cambria, Georgia; font-size: 36px; font-weight: bold;">Success!</p>
+     <hr>
+
+
+<div style="background: #FFFFFF; width: 97%; padding: 10px; color: #dd4814; font-size: 16px; font-weight: bold; font-family: 'Trebuchet MS', Georgia; -moz-border-radius: 15px; border-radius: 15px;">
+
+
+
+
+
+
+<script type="text/javascript">
+var count = 6;
+var redirect = "/pages/home";
+ 
+function countDown(){
+    var timer = document.getElementById("timer");
+    if(count > 0){
+        count--;
+        timer.innerHTML = "Redirecting in "+count+" seconds.";
+        setTimeout("countDown()", 1000);
+    }else{
+        window.location.href = redirect;
+    }
+}
+</script>
+ 
+Your message has been sent successfully!
+<br><br>
+ 
+<span id="timer">
+<script type="text/javascript">countDown();</script>
+</span>
+
+  
+  
+  
+  
+  
+</div>
+</center>
+
+
+
+
