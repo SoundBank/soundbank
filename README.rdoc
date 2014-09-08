@@ -1,28 +1,48 @@
-== README
+SoundBank
+=========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A distributed portfolio library app aimed at the media industry.
 
-Things you may want to cover:
+  - Still in early development.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+SoundBank is a scalable [Ruby on Rails] application using [Twitter Bootstrap] for cross browser and cross device deployment. 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+Version
+----
+
+0.1 - The-Puckering-Browneye
+
+Abstract
+-----------
+
+* To provide a centralised database of audio recordings for the media industry.
+* To wrap in a responsive, scalable container for mobile access.
+* To employ a secure and controlable membership system.
+* Provide profiles and uploads for artists.
+* Provide a secure purchasing system for clients.
+
+Overall the application will have a strong Social Media feel, and be an enjoyable visual experience to use.
+
+Shell Commands
+--------------
+```sh
+$ rev README.rdoc
+
+$ %blow
+```
+The above commands have nothing whatsoever to do with this application, but I felt inclined to provide some anyway.
+
+License
+----
+
+Creative Commons
+
+#### For any additional help with this application please click [here].
+
+
+[Ruby on Rails]:http://rubyonrails.org/
+[here]:http://lmgtfy.com/?q=where+is+my+ass%3F
+[Twitter Bootstrap]:http://twitter.github.com/bootstrap/
+
