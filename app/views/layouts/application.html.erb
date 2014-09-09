@@ -92,20 +92,23 @@
         <div class="row">	  
 		  <%= yield %>		   
         </div>
-      </div>
-
-      <div style="margin: 25px auto; width: 100%; background-color: #dd4814; padding: 20px; font-family: 'Trebuchet MS', Georgia; -moz-border-radius: 15px; border-radius: 15px;">
- 
-          <ul class="list-unstyled">
-            <li class="pull-right">
-			  <a href="#top" style="background-color: #dd4814">
-			    <img src="../assets/top-icon.png">
-			  </a>
-			</li>
-          <div style="color:white; font-size: 16px; font-family: 'Trebuchet MS', Georgia; font-style: italic;">Copyright 2015 SoundBank</div>
-        </div>
+      </div>  
+</div>
+	 
+	 
+<div style="position: fixed; left: 0px; bottom: 0px;width: 100%; background-color: #dd4814; height: 25px; font-family: 'Trebuchet MS', Georgia; color: silver; text-align: center;">
+   <center>
+	  <div style="display: table-cell; width: 270px; vertical-align: middle;">
+	       Copyright 2015 &#190; - SoundBank
+	  </div>
 	  
-      </div>
-	  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <div style="display: table-cell; width: 25px;">
+	       <img src="/assets/top-icon.png" style="width: 25px; height: 23px; margin 5px;">
+	  </div> 
+   </div>
+</center>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   </body>
 </html>
