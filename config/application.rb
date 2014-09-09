@@ -20,6 +20,8 @@ module SoundBank01
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 	  config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
+	  config.assets.paths << "#{Rails}/app/assets/fonts"
+	  config.assets.paths << "#{Rails}/vendor/assets/fonts"
   end
 end
 
