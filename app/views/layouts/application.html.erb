@@ -8,7 +8,7 @@
 
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>    
-    <link rel="stylesheet" href="/assets/bootstrap.css" media="screen">
+<!--      <link rel="stylesheet" href="/assets/bootstrap.css" media="screen">  -->
 	
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			  <!--[if lt IE 9]>
@@ -16,48 +16,78 @@
 			    <script src="../bower_components/respond/dest/respond.min.js"></script>
 			  <![endif]-->
 	
-<script>
-     var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-23019901-1']);
-      _gaq.push(['_setDomainName', "bootswatch.com"]);
-        _gaq.push(['_setAllowLinker', true]);
-      _gaq.push(['_trackPageview']);
 
-     (function() {
-       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-</script>
-	
-	
+
   </head>
-  <body  style="background:#5f6163"> 
-<div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
+
+<body  style="background:#5f6163"> 
+
+
+
+
+
+
+
+
+
+<style>
+  .navbar-primary .navbar { background:#dd4814; border-bottom:none; }
+  .navbar-primary .navbar .nav > li > a {color: #fff;margin: 0px;padding: 32px; text-align: center;} 
+  .navbar-primary .navbar .nav > li > a:hover {color: silver; background-color: #5f6163;} <!-- hover color change -->
+  .navbar-primary .navbar .nav .active > a,.navbar .nav .active > a:hover {color: #fff; background-color: #fff;}
+  .navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {border-top-color: #fff;border-bottom-color: #fff;}
+  .navbar-primary .navbar .nav > li.dropdown.open.active > a:hover {}
+  .navbar-primary .navbar .nav > li.dropdown.open > a {color: #fff;background-color: #dd4814;border-color: #fff;}
+  .navbar-primary .navbar .nav > li.dropdown.open.active > a:hover .caret, .tnav .navbar .nav > li.dropdown.open > a .caret {border-top-color: #fff;}
+  .navbar-primary .navbar .navbar-brand {color:#fff;}
+  .navbar-primary .navbar .nav.pull-right {margin-left: 10px; margin-right: 0;  } <!-- Overflow Problem -->
+  .navbar-xs .navbar-primary .navbar { min-height:32px; height: 32px; }
+  .navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 0px 0px;font-size: 16px;line-height: 32px; }
+  .navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 32px;  }
+  .navbar-sm .navbar-primary .navbar { min-height:32px; height: 32px; }
+  .navbar-sm .navbar-primary .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 32px; }
+  .navbar-sm .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 32px; }
+  .tnav .navbar .container { height: 32px; }
+
+</style>
+
+
+
+
+
+<div class="navbar-xs" style="min-height: 32px;"> 
+   <div class="navbar-primary" style="height: 32px;">
+       <nav class="navbar navbar-static-top" role="navigation" style="min-height: 32px;">	   
+ <div class="navbar-header" style="height: 32px;">
           <img src="../assets/logo.png">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+      <button style="height: 25px; width: 30px; padding: 0px; margin: 0px; margin-right: 10px; margin-top: 4px; border:2px solid black;" class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar" style="margin: 0px; margin-left: 2px; margin-bottom: 5px;"><img src="/assets/menu.png"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li><a href="../pages/home" target="_parent">Home</a></li>
-            <li><a href="../pages/about">About</a></li>
+      </button>
+ </div>		
+       <div class="navbar-collapse collapse" id="navbar-main" style="color: #fff; margin: 0px;">	
+         <ul class="nav navbar-nav">
+           <li><a href="../pages/home">Home</a></li>		 
+           <li><a href="../pages/about">About</a></li>
 			<li><a href="../pages/faq">FAQ</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
             <li><a href="../pages/login">Members Login</a></li>
 			<li><a href="../pages/contact">Contact</a></li>     
-          </ul>
-        </div>
-      </div>
+         </ul> 
+	  </div>
+
+    </nav>
+  </div> 
 </div>
 
-    <div class="container" style="background-color: #c3d2de; margin-top: 56px;">
+
+
+
+
+
+
+
+    <div class="container" style="background-color: #c3d2de; margin-top: 0px;">
       <div id="banner">
         <div class="row">	  
 		  <%= yield %>		   
