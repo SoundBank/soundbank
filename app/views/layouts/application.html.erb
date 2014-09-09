@@ -20,7 +20,7 @@
 
   </head>
 
-<body  style="background:#5f6163"> 
+<body  style="background:#90c9b3"> 
 
 
 
@@ -56,7 +56,7 @@
 
 
 <div class="navbar-xs" style="min-height: 32px;"> 
-   <div class="navbar-primary" style="height: 32px;">
+   <div class="navbar-primary" style="height: 32px; width: 100%; position: fixed; top: 0px; left: 0px;">
        <nav class="navbar navbar-static-top" role="navigation" style="min-height: 32px;">	   
  <div class="navbar-header" style="height: 32px;">
           <img src="../assets/logo.png">
@@ -68,7 +68,7 @@
  </div>		
        <div class="navbar-collapse collapse" id="navbar-main" style="color: #fff; margin: 0px;">	
          <ul class="nav navbar-nav">
-           <li><a href="../pages/home">Home</a></li>		 
+           <li><a href="../pages/home" target="_top">Home</a></li>		 
            <li><a href="../pages/about">About</a></li>
 			<li><a href="../pages/faq">FAQ</a></li>
             <li><a href="../pages/login">Members Login</a></li>
@@ -84,14 +84,14 @@
 
 
 
+    <div class="container" style="background-color: #90c9b3; margin-top: 0px; height: 95vh;">
 
-
-
-    <div class="container" style="background-color: #c3d2de; margin-top: 0px;">
       <div id="banner">
         <div class="row">	  
 		  <%= yield %>		   
         </div>
+		<div style="height: 2px;"></div>
+		<hr>
       </div>  
 </div>
 	 
@@ -103,7 +103,9 @@
 	  </div>
 	  
 	  <div style="display: table-cell; width: 25px;">
+	    <a href="#top" style="background-color: #dd4814">
 	       <img src="/assets/top-icon.png" style="width: 25px; height: 23px; margin 5px;">
+		</a>
 	  </div> 
    </div>
 </center>
