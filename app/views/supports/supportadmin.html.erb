@@ -10,7 +10,7 @@
 
 <center>
     <br>
-    <p style="color: #d46e00; font-style: bold; font-family: Cambria, Georgia; font-size: 36px; font-weight: bold;">Recent Messages</p>
+    <p style="color: #d46e00; font-style: bold; font-family: Cambria, Georgia; font-size: 36px; font-weight: bold;">Admin</p>
      <hr>
 	 
 	 
@@ -47,6 +47,9 @@
 			
 		    <%= support.content.split(" ").each_with_object("") {|x,ob| break ob unless (ob.length + " ".length + x.length <= 220);ob << (" " + x)}.strip %>....
 			<%= link_to( image_tag('table-read.png'), support, :style => 'background:inherit;' ) %>
+			
+<%= link_to( image_tag('table-delete.png'), support_path(support), method: :delete, data: { confirm: 'Are you sure?' }, :style => 'background:inherit;') %>
+	
 </div>
 </td>
 
@@ -60,6 +63,9 @@
 
   </table>
   
-
+  <br>
+    <img src="/assets/table-new.png">
+      <%= link_to 'Create New Message', new_support_path, :style => 'background:inherit;color:white;text-decoration: none;' %>
+	<img src="/assets/table-new.png">
 
 </div>

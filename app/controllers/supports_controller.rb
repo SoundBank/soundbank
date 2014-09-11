@@ -1,6 +1,10 @@
 class SupportsController < ApplicationController
   before_action :set_support, only: [:show, :edit, :update, :destroy]
 
+  def supportadmin
+  @supports = Support.all
+  end
+  
   # GET /supports
   # GET /supports.json
   def index
